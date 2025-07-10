@@ -1,293 +1,294 @@
-import type { MenuItem } from "../types"
+import type { MenuItem } from "../../types"
 
-// Ejemplo de menú con imágenes libres de Unsplash
-export const menuData: Record<string, MenuItem[]> = {
+const menuDataDe: Record<string, MenuItem[]> = {
   pizzas: [
     {
       id: 1,
       name: "Pizza Margherita",
       price: 12.50,
       image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate San Marzano, mozzarella fresca, albahaca y aceite de oliva virgen extra."
+      description: "San-Marzano-Tomaten, frischer Mozzarella, Basilikum und natives Olivenöl extra."
     },
     {
       id: 2,
       name: "Pizza Prosciutto e Funghi",
       price: 14.00,
       image: "https://images.unsplash.com/photo-1548365328-8b849e6c7e07?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella, jamón cocido y champiñones frescos."
+      description: "Tomaten, Mozzarella, gekochter Schinken und frische Champignons."
     },
     {
       id: 3,
       name: "Pizza Diavola",
       price: 13.50,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella, salami picante y guindilla."
+      description: "Tomaten, Mozzarella, scharfe Salami und Chili."
     },
     {
       id: 4,
       name: "Pizza Quattro Formaggi",
       price: 15.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Mozzarella, gorgonzola, provolone y parmesano."
+      description: "Mozzarella, Gorgonzola, Provolone und Parmesan."
     },
     {
       id: 5,
       name: "Pizza Vegetariana",
       price: 13.00,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella y una selección de verduras de temporada."
+      description: "Tomaten, Mozzarella und eine Auswahl an saisonalem Gemüse."
     },
     {
       id: 6,
       name: "Pizza Carbonara",
       price: 14.50,
       image: "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=400&q=80",
-      description: "Nata, mozzarella, bacon, huevo y pimienta negra."
+      description: "Sahne, Mozzarella, Speck, Ei und schwarzer Pfeffer."
     },
     {
       id: 7,
       name: "Pizza Capricciosa",
       price: 14.80,
       image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella, jamón cocido, champiñones, alcachofas y aceitunas negras."
+      description: "Tomaten, Mozzarella, gekochter Schinken, Champignons, Artischocken und schwarze Oliven."
     },
     {
       id: 8,
       name: "Pizza Tonno e Cipolla",
       price: 13.00,
       image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella, atún y cebolla roja."
+      description: "Tomaten, Mozzarella, Thunfisch und rote Zwiebeln."
     },
     {
       id: 9,
-      name: "Pizza Bianca con Patate e Rosmarino",
+      name: "Pizza Bianca mit Kartoffeln und Rosmarin",
       price: 12.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Mozzarella, patatas finas en rodajas y romero fresco."
+      description: "Mozzarella, dünne Kartoffelscheiben und frischer Rosmarin."
     },
     {
       id: 10,
       name: "Calzone Classico",
       price: 13.80,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella, jamón cocido y champiñones, doblado y horneado."
+      description: "Tomaten, Mozzarella, gekochter Schinken und Champignons, gefaltet und gebacken."
     }
   ],
   entrantes: [
     {
       id: 11,
-      name: "Focaccia con Romero y Sal",
+      name: "Focaccia mit Rosmarin und Salz",
       price: 6.00,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Pan plano horneado con romero y sal marina, ideal para compartir."
+      description: "Fladenbrot gebacken mit Rosmarin und Meersalz, ideal zum Teilen."
     },
     {
       id: 12,
-      name: "Carpaccio de Ternera",
+      name: "Carpaccio vom Rind",
       price: 11.00,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Finas láminas de ternera con rúcula, parmesano y salsa de mostaza."
+      description: "Dünne Rindfleischscheiben mit Rucola, Parmesan und Senfsauce."
     },
     {
       id: 13,
-      name: "Burrata con Tomates Cherry",
+      name: "Burrata mit Kirschtomaten",
       price: 10.50,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Cremosa burrata fresca acompañada de tomates cherry y albahaca."
+      description: "Cremige frische Burrata, serviert mit Kirschtomaten und Basilikum."
     },
     {
       id: 14,
-      name: "Tabla de Embutidos Italianos",
+      name: "Italienische Aufschnittplatte",
       price: 16.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Selección de los mejores embutidos italianos, como Prosciutto di Parma y Salame Milano."
+      description: "Auswahl der besten italienischen Wurstwaren, wie Prosciutto di Parma und Salame Milano."
     },
     {
       id: 15,
-      name: "Arancini de Arroz",
+      name: "Reis-Arancini",
       price: 8.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Bolas de arroz rellenas de ragú y mozzarella, fritas hasta dorar."
+      description: "Reisbällchen, gefüllt mit Ragù und Mozzarella, goldbraun frittiert."
     },
     {
       id: 16,
-      name: "Ensalada Caprese",
+      name: "Caprese-Salat",
       price: 9.50,
       image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Tomate, mozzarella de búfala, albahaca fresca y aceite de oliva virgen extra."
+      description: "Tomaten, Büffelmozzarella, frisches Basilikum und natives Olivenöl extra."
     },
     {
       id: 17,
-      name: "Provoleta al Horno",
+      name: "Gebackener Provoleta",
       price: 9.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Queso provolone fundido al horno con orégano y un toque de aceite."
+      description: "Geschmolzener Provolone-Käse, gebacken mit Oregano und einem Schuss Öl."
     },
     {
       id: 18,
-      name: "Patatas Trufadas",
+      name: "Trüffel-Pommes",
       price: 7.50,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Patatas fritas con aceite de trufa y parmesano rallado."
+      description: "Pommes frites mit Trüffelöl und geriebenem Parmesan."
     },
     {
       id: 19,
-      name: "Bruschetta Mista",
+      name: "Gemischte Bruschetta",
       price: 8.50,
       image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Pan tostado con diferentes coberturas: tomate y albahaca, y paté de aceitunas."
+      description: "Geröstetes Brot mit verschiedenen Belägen: Tomate und Basilikum, und Olivenpaste."
     },
     {
       id: 20,
-      name: "Melanzane alla Parmigiana",
+      name: "Auberginen-Parmigiana",
       price: 10.00,
       image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Berenjenas al horno con tomate, mozzarella y parmesano."
+      description: "Gebackene Auberginen mit Tomaten, Mozzarella und Parmesan."
     }
   ],
   bebidas: [
     {
       id: 21,
-      name: "Agua Mineral",
+      name: "Mineralwasser",
       price: 2.50,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Agua mineral natural o con gas."
+      description: "Mineralwasser, still oder mit Kohlensäure."
     },
     {
       id: 22,
-      name: "Refresco (Coca-Cola, Fanta, Sprite)",
+      name: "Erfrischungsgetränk (Coca-Cola, Fanta, Sprite)",
       price: 3.00,
       image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-      description: "Variedad de refrescos populares."
+      description: "Auswahl an beliebten Erfrischungsgetränken."
     },
     {
       id: 23,
-      name: "Zumo Natural (Naranja, Piña, Manzana)",
+      name: "Frischer Saft (Orange, Ananas, Apfel)",
       price: 3.50,
       image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
-      description: "Zumos de frutas naturales recién exprimidos."
+      description: "Frisch gepresste Fruchtsäfte."
     },
     {
       id: 24,
-      name: "Limonada Casera",
+      name: "Hausgemachte Limonade",
       price: 3.80,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Refrescante limonada natural, hecha en casa."
+      description: "Erfrischende, hausgemachte Naturlimonade."
     },
     {
       id: 25,
-      name: "Té Frío (Limón, Melocotón)",
+      name: "Eistee (Zitrone, Pfirsich)",
       price: 3.20,
       image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-      description: "Té helado listo para refrescar, en diferentes sabores."
+      description: "Eistee zur Erfrischung, in verschiedenen Geschmacksrichtungen."
     },
     {
       id: 26,
-      name: "Café Espresso",
+      name: "Espresso",
       price: 2.00,
       image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80",
-      description: "Café espresso italiano, intenso y aromático."
+      description: "Italienischer Espresso, intensiv und aromatisch."
     },
     {
       id: 27,
       name: "Cappuccino",
       price: 2.80,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Café con leche espumosa, perfecto para cualquier momento."
+      description: "Kaffee mit aufgeschäumter Milch, perfekt für jede Tageszeit."
     },
     {
       id: 28,
       name: "Latte Macchiato",
       price: 3.00,
       image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
-      description: "Leche caliente manchada con un toque de espresso."
+      description: "Heiße Milch mit einem Schuss Espresso."
     },
     {
       id: 29,
-      name: "Chocolate Caliente",
+      name: "Heiße Schokolade",
       price: 3.50,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Delicioso chocolate caliente, cremoso y reconfortante."
+      description: "Köstliche heiße Schokolade, cremig und wohltuend."
     },
     {
       id: 30,
-      name: "Batido de Frutas (Fresa, Plátano)",
+      name: "Frucht-Smoothie (Erdbeere, Banane)",
       price: 4.50,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Batidos refrescantes de frutas naturales."
+      description: "Erfrischende Smoothies aus frischen Früchten."
     }
   ],
   postres: [
     {
       id: 31,
-      name: "Tiramisú Clásico",
+      name: "Klassisches Tiramisù",
       price: 6.50,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Postre tradicional italiano con capas de bizcochos de soletilla, café, mascarpone y cacao."
+      description: "Traditionelles italienisches Dessert mit Schichten aus Löffelbiskuits, Kaffee, Mascarpone und Kakao."
     },
     {
       id: 32,
-      name: "Panna Cotta con Frutos Rojos",
+      name: "Panna Cotta mit roten Früchten",
       price: 6.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Postre cremoso de nata con una salsa de frutos rojos frescos."
+      description: "Cremiger Sahne-Pudding mit einer Sauce aus frischen roten Früchten."
     },
     {
       id: 33,
-      name: "Cannoli Siciliani",
+      name: "Sizilianische Cannoli",
       price: 7.00,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Crujientes tubos de masa frita rellenos de ricota dulce y fruta confitada."
+      description: "Knusprige frittierte Teigröllchen, gefüllt mit süßer Ricotta und kandierten Früchten."
     },
     {
       id: 34,
-      name: "Gelato Artesanal",
+      name: "Handwerkliches Gelato",
       price: 5.00,
       image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Helado artesanal italiano en varios sabores: vainilla, chocolate, pistacho."
+      description: "Handwerklich hergestelltes italienisches Eis in verschiedenen Sorten: Vanille, Schokolade, Pistazie."
     },
     {
       id: 35,
-      name: "Tarta de Queso con Amarena",
+      name: "Käsekuchen mit Amarena-Kirschen",
       price: 6.80,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Cheesecake cremoso con cerezas Amarena confitadas."
+      description: "Cremiger Käsekuchen mit kandierten Amarena-Kirschen."
     },
     {
       id: 36,
-      name: "Profiteroles con Chocolate",
+      name: "Profiteroles mit Schokolade",
       price: 6.20,
       image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Pequeños bollos de pasta choux rellenos de nata y cubiertos con salsa de chocolate."
+      description: "Kleine Windbeutel aus Brandteig, gefüllt mit Sahne und überzogen mit Schokoladensauce."
     },
     {
       id: 37,
-      name: "Mousse de Chocolate",
+      name: "Mousse au Chocolat",
       price: 5.80,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Suave y ligera mousse de chocolate negro."
+      description: "Weiche und leichte Mousse aus dunkler Schokolade."
     },
     {
       id: 38,
-      name: "Fruta Fresca de Temporada",
+      name: "Frisches Obst der Saison",
       price: 4.50,
       image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Selección de frutas frescas de temporada."
+      description: "Eine Auswahl an frischem saisonalem Obst."
     },
     {
       id: 39,
-      name: "Semifreddo de Turrón",
+      name: "Nougat-Semifreddo",
       price: 6.70,
       image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Postre helado cremoso con trozos de turrón."
+      description: "Cremiges Halbgefrorenes mit Nougatstücken."
     },
     {
       id: 40,
       name: "Affogato al Caffè",
       price: 4.00,
       image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Bola de helado de vainilla ahogada en un shot de espresso caliente."
+      description: "Eine Kugel Vanilleeis, ertränkt in einem heißen Espresso-Shot."
     }
   ]
 }
+
+export default menuDataDe

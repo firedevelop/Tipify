@@ -2,7 +2,8 @@ export type MenuItem = {
     id: number
     name: string
     price: number
-    image: string // <-- Añade esta línea
+    image: string
+    description: string
 }
 
 export type OrderItem = MenuItem & {
