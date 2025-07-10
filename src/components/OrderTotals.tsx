@@ -19,12 +19,8 @@ export default function OrderTotals({
     [order]
   )
 
-  const tipAmount = useMemo(() => subTotalAmmount * tip, [subTotalAmmount, tip])
-
-  const totalAmount = useMemo(
-    () => subTotalAmmount + tipAmount,
-    [subTotalAmmount, tipAmount]
-  )
+  const tipAmount = subTotalAmmount * (tip / 100)
+  const totalAmount = subTotalAmmount + tipAmount
 
   return (
     <>
@@ -47,11 +43,10 @@ export default function OrderTotals({
       </div>
 
       <button
-        className="w-full p-3 mt-10 font-bold text-white uppercase bg-black disabled:opacity-10"
-        disabled={totalAmount === 0}
-        onClick={() => dispatch({ type: 'place-order' })}
+        type="button"
+        className="w-full bg-stripe-blue text-white font-semibold py-2 rounded-lg shadow-sm hover:bg-stripe-dark transition-colors focus:outline-none focus:ring-2 focus:ring-stripe-blue focus:ring-offset-2"
       >
-        Guardar Orden
+        Guardar orden
       </button>
     </>
   )
