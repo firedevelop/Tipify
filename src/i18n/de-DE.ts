@@ -3,9 +3,21 @@ export default {
   share: "Teilen",
   plans: "Pläne",
   contact: "Kontakt",
+  credits: "Credits",
   pizzas: "Pizzen",
   entrantes: "Vorspeisen",
   bebidas: "Getränke",
   postres: "Nachspeisen",
-  // ...weitere Texte   
+  order: "Bestellung",
+  add: "Hinzufügen",
+  remove: "Entfernen",
+  total: "Gesamt",
+  tip: "Trinkgeld",
+  selectTip: "Trinkgeld-Prozentsatz auswählen",
+  pay: "Bezahlen",
+  emptyOrder: "Ihre Bestellung ist leer.",
+  thankYou: "Vielen Dank für Ihre Bestellung!",
+  home: "Startseite",
+  catalogSubtitle: "Personalisierter Online-Restaurantkatalog.",
+  // ...weitere Texte
 }

@@ -1,4 +1,8 @@
-export default function Contact() {
+interface ContactProps {
+  t: any
+}
+
+const Contact = ({ t }: ContactProps) => {
   return (
     <div className="max-w-2xl mx-auto py-12">
       <h2 className="text-3xl font-bold mb-4">Contacto</h2>
@@ -12,3 +16,5 @@ export default function Contact() {
     </div>
   )
 }
+
+export default Contact

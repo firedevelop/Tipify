@@ -1,14 +1,15 @@
-import { Dispatch } from 'react'
+import type { OrderItem } from '../types'
+import type { Dispatch } from 'react'
+import type { OrderActions } from '../reducers/order-reducer'
 import { formatCurrency } from '../helpers'
-import { OrderItem } from '../types'
-import { OrderActions } from '../reducers/order-reducer'
 
-type OrderContentsProps = {
+interface OrderContentsProps {
   order: OrderItem[]
   dispatch: Dispatch<OrderActions>
+  t: any // O mejor: especifica el tipo si tienes uno para las traducciones
 }
 
-export default function OrderContents({ order, dispatch }: OrderContentsProps) {
+const OrderContents = ({ order, dispatch, t }: OrderContentsProps) => {
   return (
     <div>
       <h2 className="text-4xl font-black">Consumo</h2>
@@ -45,3 +46,5 @@ export default function OrderContents({ order, dispatch }: OrderContentsProps) {
     </div>
   )
 }
+
+export default OrderContents

@@ -1,4 +1,8 @@
-export default function Compartir() {
+interface CompartirProps {
+  t: any
+}
+
+export default function Compartir({ t }: CompartirProps) {
   return (
     <div className="max-w-2xl mx-auto py-12 flex flex-col items-center">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-12 h-12 mb-4 text-stripe-blue">

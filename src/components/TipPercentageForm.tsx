@@ -1,5 +1,5 @@
 import React, { Dispatch, useEffect, useState } from 'react'
-import { OrderActions } from '../reducers/order-reducer'
+import type { OrderActions } from '../reducers/order-reducer'
 
 const tipOptions = [
   { id: 'tip-5', value: 5, label: '5%' },
@@ -9,9 +9,10 @@ const tipOptions = [
   { id: 'tip-100', value: 100, label: '100%' },
 ]
 
-type TipPercentageFormProps = {
-  tip: number
+export interface TipPercentageFormProps {
   dispatch: Dispatch<OrderActions>
+  tip: number
+  t: any // O el tipo específico de tus traducciones si lo tienes
 }
 
 export default function TipPercentageForm({
