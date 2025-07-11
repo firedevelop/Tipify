@@ -9,6 +9,7 @@ import Plans from './pages/Plans'
 import Contact from './pages/Contact'
 import Credits from './pages/Credits'
 import Compartir from './pages/Compartir'
+import OrderConfirmation from './pages/OrderConfirmation'
 import { menuData } from './data/menu' // Solo si necesitas varios idiomas
 import type { MenuItemType } from './types/MenuItem'
 import { translations } from './i18n/index'
@@ -149,6 +150,7 @@ function App() {
             <Route path="/contact" element={<Contact t={t} />} />
             <Route path="/credits" element={<Credits t={t} />} />
             <Route path="/compartir" element={<Compartir t={t} />} />
+            <Route path="/confirmacion" element={<OrderConfirmation t={t} />} />
           </Routes>
         </div>
         {/* Footer solo para Credits */}

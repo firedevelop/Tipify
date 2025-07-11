@@ -5,6 +5,7 @@ export type OrderActions =
   | { type: 'remove-item'; payload: { id: MenuItem['id'] } }
   | { type: 'place-order' }
   | { type: 'add-tip'; payload: { value: number } }
+  | { type: 'reset-order' }
 
 export type OrderState = {
   order: OrderItem[]
@@ -62,6 +63,14 @@ export const orderReducer = (
     return {
       ...state,
       tip,
+    }
+  }
+
+  if (action.type === 'reset-order') {
+    return {
+      ...state,
+      order: [],
+      tip: 0,
     }
   }
 
