@@ -80,11 +80,15 @@ function App() {
               </svg>
             </button>
             {showLangs && (
-              <div className="absolute right-0 mt-2 bg-white border rounded-lg shadow-lg z-10 min-w-[120px]">
+              <div className="absolute right-0 mt-2 bg-white border border-stripe-blue rounded-lg shadow-lg z-10 min-w-[140px]">
                 {LANGS.map(l => (
                   <button
                     key={l.code}
-                    className={`flex items-center w-full px-3 py-2 gap-2 hover:bg-stripe-blue/10 text-left ${lang === l.code ? 'font-bold text-stripe-blue' : ''}`}
+                    className={`flex items-center w-full px-4 py-2 gap-2 rounded-lg border border-transparent font-semibold transition-colors
+          ${lang === l.code
+            ? 'bg-stripe-blue text-white border-stripe-blue'
+            : 'bg-white text-stripe-blue hover:bg-stripe-blue/10'}
+        `}
                     onClick={() => {
                       setLang(l.code)
                       setShowLangs(false)
@@ -124,20 +128,20 @@ function App() {
             <Route
               path="/"
               element={
-                <main className="grid gap-6 md:gap-10 md:grid-cols-2">
-                  <section className="p-4 sm:p-6 md:p-8 bg-stripe-gray rounded-2xl shadow hover:shadow-lg transition-shadow border border-stripe-gray2">
+                <main className="grid grid-cols-1 gap-6 md:gap-10 md:grid-cols-2">
+                  <section className="w-full p-4 sm:p-6 md:p-8 bg-stripe-gray rounded-2xl shadow hover:shadow-lg transition-shadow border border-stripe-gray2">
                     <h2 className="text-2xl md:text-3xl font-bold text-stripe-dark mb-6 flex items-center gap-3">
                       {t.menu}
                     </h2>
-                    <div className="flex gap-2 mb-6">
+                    <div className="flex gap-2 mb-6 overflow-x-auto scrollbar-thin scrollbar-thumb-stripe-gray2 scrollbar-track-transparent">
                       {categories.map(cat => (
                         <button
                           key={cat.key}
-                          className={`px-4 py-2 rounded-lg font-semibold border transition-colors
-                          ${activeCategory === cat.key
-                            ? 'bg-stripe-blue text-white border-stripe-blue'
-                            : 'bg-white text-stripe-blue border-stripe-blue hover:bg-stripe-blue/10'}
-                          `}
+                          className={`flex-shrink-0 px-4 py-2 rounded-lg font-semibold border transition-colors
+        ${activeCategory === cat.key
+          ? 'bg-stripe-blue text-white border-stripe-blue'
+          : 'bg-white text-stripe-blue border-stripe-blue hover:bg-stripe-blue/10'}
+      `}
                           onClick={() => setActiveCategory(cat.key)}
                         >
                           {t[cat.key]}
@@ -151,7 +155,7 @@ function App() {
                     </div>
                   </section>
 
-                  <section className="p-4 sm:p-6 md:p-8 bg-stripe-gray rounded-2xl shadow hover:shadow-lg transition-shadow border border-stripe-gray2 flex flex-col justify-between">
+                  <section className="w-full p-4 sm:p-6 md:p-8 bg-stripe-gray rounded-2xl shadow hover:shadow-lg transition-shadow border border-stripe-gray2 flex flex-col justify-between">
                     {state.order.length ? (
                       <>
                         <OrderContents order={state.order} dispatch={dispatch} t={t} />
