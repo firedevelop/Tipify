@@ -1,7 +1,12 @@
 export default {
   menu: "Menü",
   share: "Teilen",
-  plans: "Pläne",
+  plans: {
+    titulo: "Pläne und Preise",
+    descripcion: "Wählen Sie den Plan, der am besten zu Ihrem Unternehmen passt.",
+    cta: "Starten",
+    ctaPremium: "Premium testen"
+  },
   contact: "Kontaktieren Sie uns",
   credits: "Credits",
   pizzas: "Pizzen",

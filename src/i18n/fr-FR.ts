@@ -1,7 +1,12 @@
 export default {
   menu: "Menu",
   share: "Partager",
-  plans: "Formules",
+  plans: {
+    titulo: "Formules et tarifs",
+    descripcion: "Choisissez la formule qui correspond le mieux à votre établissement.",
+    cta: "Commencer",
+    ctaPremium: "Essayer Premium"
+  },
   contact: "Contactez-nous",
   contactTitulo: "Contact",
   contactDescripcion: "Des questions ou des suggestions ? Écrivez-nous :",

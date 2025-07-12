@@ -1,7 +1,12 @@
 export default {
   menu: "Menù",
   share: "Condividi",
-  plans: "Piani",
+  plans: {
+    titulo: "Piani e prezzi",
+    descripcion: "Scegli il piano più adatto alla tua attività.",
+    cta: "Inizia",
+    ctaPremium: "Prova Premium"
+  },
   contact: "Contattaci",
   contactTitulo: "Contatto",
   contactDescripcion: "Hai domande o suggerimenti? Scrivici:",

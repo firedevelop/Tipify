@@ -1,7 +1,12 @@
 export default {
   menu: "Menu",
   share: "Share",
-  plans: "Plans",
+  plans: {
+    titulo: "Plans and pricing",
+    descripcion: "Choose the plan that best fits your business.",
+    cta: "Start",
+    ctaPremium: "Try Premium"
+  },
   contact: "Contact us",
   contactTitulo: "Contact",
   contactDescripcion: "Do you have questions or suggestions? Write to us:",
