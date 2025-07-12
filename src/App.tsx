@@ -47,66 +47,93 @@ function App() {
       <div className="min-h-screen bg-stripe-gray font-sans flex flex-col items-center justify-center py-8 px-2">
         {/* --- Menú de navegación superior --- */}
         <nav className="w-full px-2 sm:px-4 md:px-8 lg:px-16 mb-8 flex flex-wrap items-center justify-between text-base sm:text-lg font-medium">
-          <div className="flex flex-wrap items-center gap-2 sm:gap-4">
-            <Link to="/" className="hover:underline flex items-center gap-1">
-              {/* ...icono y texto... */}
-              {t.home}
-            </Link>
-            <span className="hidden sm:inline">|</span>
-            <Link to="/compartir" className="hover:underline flex items-center gap-1">
-              {/* ...icono y texto... */}
-              {t.share}
-            </Link>
-            <span className="hidden sm:inline">|</span>
-            <Link to="/plans" className="hover:underline">{t.plans}</Link>
-            <span className="hidden sm:inline">|</span>
-            <Link to="/contact" className="hover:underline">{t.contact}</Link>
-          </div>
-          {/* Dropdown personalizado de idiomas */}
-          <div className="relative">
-            <button
-              className="flex items-center border rounded px-2 py-1 bg-white text-stripe-blue font-semibold gap-2"
-              onClick={() => setShowLangs(v => !v)}
-            >
-              <img
-                src={LANGS.find(l => l.code === lang)?.flag}
-                alt=""
-                className="w-5 h-5 rounded-full object-cover"
-                style={{ background: "#fff" }}
-              />
-              {LANGS.find(l => l.code === lang)?.label}
-              <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {showLangs && (
-              <div className="absolute right-0 mt-2 bg-white border border-stripe-blue rounded-lg shadow-lg z-10 min-w-[140px]">
-                {LANGS.map(l => (
-                  <button
-                    key={l.code}
-                    className={`flex items-center w-full px-4 py-2 gap-2 rounded-lg border border-transparent font-semibold transition-colors
+  <div className="flex flex-wrap items-center gap-2 sm:gap-4">
+    <Link
+      to="/"
+      className="flex items-center gap-1 transition-colors text-stripe-gray3 hover:text-stripe-blue"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-stripe-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+      </svg>
+      {t.home}
+    </Link>
+    
+    <Link
+      to="/compartir"
+      className="flex items-center gap-1 transition-colors text-stripe-gray3 hover:text-stripe-blue"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-stripe-blue" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
+      </svg>
+      {t.share}
+    </Link>
+    
+    <Link
+      to="/plans"
+      className="flex items-center gap-1 transition-colors text-stripe-gray3 hover:text-stripe-blue"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-stripe-blue" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+      </svg>
+      {t.plans}
+    </Link>
+    
+    <Link
+      to="/contact"
+      className="flex items-center gap-1 transition-colors text-stripe-gray3 hover:text-stripe-blue"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-stripe-blue" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+      </svg>
+      {t.contact}
+    </Link>
+  </div>
+  {/* Dropdown personalizado de idiomas */}
+  <div className="relative">
+    <button
+      className="flex items-center border rounded px-2 py-1 bg-white text-stripe-blue font-semibold gap-2"
+      onClick={() => setShowLangs(v => !v)}
+    >
+      <img
+        src={LANGS.find(l => l.code === lang)?.flag}
+        alt=""
+        className="w-5 h-5 rounded-full object-cover"
+        style={{ background: "#fff" }}
+      />
+      {LANGS.find(l => l.code === lang)?.label}
+      <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+      </svg>
+    </button>
+    {showLangs && (
+      <div className="absolute right-0 mt-2 bg-white border border-stripe-blue rounded-lg shadow-lg z-10 min-w-[140px]">
+        {LANGS.map(l => (
+          <button
+            key={l.code}
+            className={`flex items-center w-full px-4 py-2 gap-2 rounded-lg border border-transparent font-semibold transition-colors
           ${lang === l.code
             ? 'bg-stripe-blue text-white border-stripe-blue'
             : 'bg-white text-stripe-blue hover:bg-stripe-blue/10'}
         `}
-                    onClick={() => {
-                      setLang(l.code)
-                      setShowLangs(false)
-                    }}
-                  >
-                    <img
-                      src={l.flag}
-                      alt={l.label}
-                      className="w-5 h-5 rounded-full object-cover"
-                      style={{ background: "#fff" }}
-                    />
-                    {l.label}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-        </nav>
+            onClick={() => {
+              setLang(l.code)
+              setShowLangs(false)
+            }}
+          >
+            <img
+              src={l.flag}
+              alt={l.label}
+              className="w-5 h-5 rounded-full object-cover"
+              style={{ background: "#fff" }}
+            />
+            {l.label}
+          </button>
+        ))}
+      </div>
+    )}
+  </div>
+</nav>
         {/* --- Fin menú navegación superior --- */}
 
         <div className="w-full max-w-6xl bg-white shadow-xl rounded-3xl p-4 sm:p-10 lg:p-16 border border-stripe-gray2">
