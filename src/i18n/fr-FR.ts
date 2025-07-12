@@ -1,9 +1,22 @@
 export default {
   menu: "Menu",
   share: "Partager",
-  plans: "Formules",
+  plans: {
+    titulo: "Formules et tarifs",
+    descripcion: "Choisissez la formule qui correspond le mieux à votre établissement.",
+    cta: "Commencer",
+    ctaPremium: "Essayer Premium"
+  },
   contact: "Contactez-nous",
+  contactTitulo: "Contact",
+  contactDescripcion: "Des questions ou des suggestions ? Écrivez-nous :",
+  contactNombre: "Votre nom",
+  contactEmail: "Votre email",
+  contactMensaje: "Message",
+  contactEnviar: "Envoyer",
   credits: "Crédits",
+  creditsTitulo: "Crédits",
+  creditsDescripcion: "Développé par votre équipe. Images d'Unsplash et Pexels. Tipify © 2025.",
   pizzas: "Pizzas",
   entrantes: "Entrées",
   bebidas: "Boissons",
@@ -19,5 +32,8 @@ export default {
   thankYou: "Merci pour votre commande !",
   home: "Accueil",
   catalogSubtitle: "Catalogue de restaurant en ligne personnalisé.",
+  orderSaved: "Commande enregistrée !",
+  orderIs: "Votre numéro de commande est :",
+  backHome: "Retour à l'accueil",
   // ...autres textes
 }
