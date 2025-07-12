@@ -192,9 +192,7 @@ function App() {
                           tip={state.tip}
                           dispatch={dispatch}
                         />
-                        <button className="w-full sm:w-auto bg-stripe-blue text-white px-4 py-2 rounded mt-4">
-                          Guardar orden
-                        </button>
+                        {/* Elimina el botón duplicado aquí */}
                       </>
                     ) : (
                       <div className="flex flex-1 items-center justify-center h-full">
