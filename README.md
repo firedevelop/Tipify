@@ -18,6 +18,7 @@
 
 ---
 <p align="center">
+  <img src="public/screen-00.png" alt="Tipify Screenshot 1" width="700"/>
   <img src="public/screen-01.png" alt="Tipify Screenshot 1" width="700"/>
   <img src="public/screen-02.png" alt="Tipify Screenshot 2" width="700"/>
   <img src="public/screen-03.png" alt="Tipify Screenshot 3" width="700"/>
@@ -340,4 +341,9 @@ Photo by <a href="https://unsplash.com/@nahimaaparicio?utm_content=creditCopyTex
 Photo by <a href="https://unsplash.com/@alexlvrs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Alex Lvrs</a> on <a href="https://unsplash.com/photos/round-sliced-pie-with-cream-aX_ljOOyWJY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@luisanazl?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">luisana zerpa</a> on <a href="https://unsplash.com/photos/white-and-red-cupcake-with-white-icing-on-top-MJPr6nOdppw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+
+### Art
+Illustration by <a href="https://unsplash.com/@revendo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Revendo</a> on <a href="https://unsplash.com/illustrations/a-minimalistic-illustration-of-a-smartphone-ya7Qhc-mKF0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
 
