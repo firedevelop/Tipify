@@ -89,8 +89,8 @@ function App() {
               {t.contact}
             </Link>
           </div>
-          {/* Dropdown personalizado de idiomas */}
-          <div className="relative">
+          {/* Añade margen izquierdo al dropdown para separar */}
+          <div className="relative ml-4">
             <button
               className="flex items-center border rounded px-2 py-1 bg-white text-stripe-blue font-semibold gap-2"
               onClick={() => setShowLangs(v => !v)}
