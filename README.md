@@ -1,15 +1,4 @@
 <p align="center">
-  <img src="public/screen-01.png" alt="Tipify Screenshot 1" width="700"/>
-  <img src="public/screen-02.png" alt="Tipify Screenshot 2" width="700"/>
-  <img src="public/screen-03.png" alt="Tipify Screenshot 3" width="700"/>
-  <img src="public/screen-04.png" alt="Tipify Screenshot 3" width="700"/>
-  <img src="public/screen-05.png" alt="Tipify Screenshot 3" width="700"/>
-  <img src="public/screen-06.png" alt="Tipify Screenshot 3" width="700"/>
-  <img src="public/screen-07.png" alt="Tipify Screenshot 3" width="700"/>
-
-</p>
-
-<p align="center">
   <img src="./public/logo-tipify-2.png" alt="Tipify Logo" width="180"/>
 </p>
 
@@ -28,6 +17,18 @@
 [🇪🇸 Español](#español) | [🇬🇧 English](#english)
 
 ---
+<p align="center">
+  <img src="public/screen-01.png" alt="Tipify Screenshot 1" width="700"/>
+  <img src="public/screen-02.png" alt="Tipify Screenshot 2" width="700"/>
+  <img src="public/screen-03.png" alt="Tipify Screenshot 3" width="700"/>
+  <img src="public/screen-04.png" alt="Tipify Screenshot 3" width="700"/>
+  <img src="public/screen-05.png" alt="Tipify Screenshot 3" width="700"/>
+  <img src="public/screen-06.png" alt="Tipify Screenshot 3" width="700"/>
+  <img src="public/screen-07.png" alt="Tipify Screenshot 3" width="700"/>
+
+</p>
+---
+
 
 # English
 
