@@ -6,70 +6,70 @@ const menuDataDe: Record<string, MenuItem[]> = {
       id: 1,
       name: "Pizza Margherita",
       price: 12.50,
-      image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80",
-      description: "San-Marzano-Tomaten, frischer Mozzarella, Basilikum und natives Olivenöl extra."
+      image: "images/menu/pizzas/pizza-001.webp",
+      description: "San Marzano Tomaten, frischer Mozzarella, Basilikum und natives Olivenöl extra."
     },
     {
       id: 2,
       name: "Pizza Prosciutto e Funghi",
       price: 14.00,
-      image: "https://images.unsplash.com/photo-1548365328-8b849e6c7e07?auto=format&fit=crop&w=400&q=80",
-      description: "Tomaten, Mozzarella, gekochter Schinken und frische Champignons."
+      image: "images/menu/pizzas/pizza-002.webp",
+      description: "Tomate, Mozzarella, gekochter Schinken und frische Champignons."
     },
     {
       id: 3,
       name: "Pizza Diavola",
       price: 13.50,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-003.webp",
       description: "Tomaten, Mozzarella, scharfe Salami und Chili."
     },
     {
       id: 4,
       name: "Pizza Quattro Formaggi",
       price: 15.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-004.webp",
       description: "Mozzarella, Gorgonzola, Provolone und Parmesan."
     },
     {
       id: 5,
       name: "Pizza Vegetariana",
       price: 13.00,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-005.webp",
       description: "Tomaten, Mozzarella und eine Auswahl an saisonalem Gemüse."
     },
     {
       id: 6,
       name: "Pizza Carbonara",
       price: 14.50,
-      image: "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-006.webp",
       description: "Sahne, Mozzarella, Speck, Ei und schwarzer Pfeffer."
     },
     {
       id: 7,
       name: "Pizza Capricciosa",
       price: 14.80,
-      image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-007.webp",
       description: "Tomaten, Mozzarella, gekochter Schinken, Champignons, Artischocken und schwarze Oliven."
     },
     {
       id: 8,
       name: "Pizza Tonno e Cipolla",
       price: 13.00,
-      image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-008.webp",
       description: "Tomaten, Mozzarella, Thunfisch und rote Zwiebeln."
     },
     {
       id: 9,
       name: "Pizza Bianca mit Kartoffeln und Rosmarin",
       price: 12.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-009.webp",
       description: "Mozzarella, dünne Kartoffelscheiben und frischer Rosmarin."
     },
     {
       id: 10,
       name: "Calzone Classico",
       price: 13.80,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/pizzas/pizza-010.webp",
       description: "Tomaten, Mozzarella, gekochter Schinken und Champignons, gefaltet und gebacken."
     }
   ],
@@ -78,71 +78,71 @@ const menuDataDe: Record<string, MenuItem[]> = {
       id: 11,
       name: "Focaccia mit Rosmarin und Salz",
       price: 6.00,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Fladenbrot gebacken mit Rosmarin und Meersalz, ideal zum Teilen."
+      image: "images/menu/starters/starters-001.webp",
+      description: "Im Ofen gebackenes Fladenbrot mit Rosmarin und Meersalz, ideal zum Teilen."
     },
     {
       id: 12,
-      name: "Carpaccio vom Rind",
+      name: "Rindercarpaccio",
       price: 11.00,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/starters/starters-002.webp",
       description: "Dünne Rindfleischscheiben mit Rucola, Parmesan und Senfsauce."
     },
     {
       id: 13,
-      name: "Burrata mit Kirschtomaten",
+      name: "Burrata mit Cherrytomaten",
       price: 10.50,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Cremige frische Burrata, serviert mit Kirschtomaten und Basilikum."
+      image: "images/menu/starters/starters-003.webp",
+      description: "Cremige Burrata mit Cherrytomaten und Basilikum."
     },
     {
       id: 14,
-      name: "Italienische Aufschnittplatte",
+      name: "Italienische Wurstplatte",
       price: 16.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Auswahl der besten italienischen Wurstwaren, wie Prosciutto di Parma und Salame Milano."
+      image: "images/menu/starters/starters-004.webp",
+      description: "Auswahl der besten italienischen Wurstwaren wie Prosciutto di Parma und Salame Milano."
     },
     {
       id: 15,
-      name: "Reis-Arancini",
+      name: "Arancini (Reisbällchen)",
       price: 8.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Reisbällchen, gefüllt mit Ragù und Mozzarella, goldbraun frittiert."
+      image: "images/menu/starters/starters-005.webp",
+      description: "Reisbällchen mit Ragù und Mozzarella gefüllt, goldbraun frittiert."
     },
     {
       id: 16,
       name: "Caprese-Salat",
       price: 9.50,
-      image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Tomaten, Büffelmozzarella, frisches Basilikum und natives Olivenöl extra."
+      image: "images/menu/starters/starters-006.webp",
+      description: "Tomaten, Büffelmozzarella, frisches Basilikum und Olivenöl extra vergine."
     },
     {
       id: 17,
-      name: "Gebackener Provoleta",
+      name: "Überbackene Provoleta",
       price: 9.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Geschmolzener Provolone-Käse, gebacken mit Oregano und einem Schuss Öl."
+      image: "images/menu/starters/starters-007.webp",
+      description: "Geschmolzener Provolone-Käse mit Oregano und einem Schuss Öl im Ofen gebacken."
     },
     {
       id: 18,
       name: "Trüffel-Pommes",
       price: 7.50,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/starters/starters-008.webp",
       description: "Pommes frites mit Trüffelöl und geriebenem Parmesan."
     },
     {
       id: 19,
       name: "Gemischte Bruschetta",
       price: 8.50,
-      image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Geröstetes Brot mit verschiedenen Belägen: Tomate und Basilikum, und Olivenpaste."
+      image: "images/menu/starters/starters-009.webp",
+      description: "Geröstetes Brot mit verschiedenen Belägen: Tomate und Basilikum, Olivenpaste."
     },
     {
       id: 20,
-      name: "Auberginen-Parmigiana",
+      name: "Auberginen Parmigiana",
       price: 10.00,
-      image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Gebackene Auberginen mit Tomaten, Mozzarella und Parmesan."
+      image: "images/menu/starters/starters-010.webp",
+      description: "Im Ofen gebackene Auberginen mit Tomaten, Mozzarella und Parmesan."
     }
   ],
   bebidas: [
@@ -150,143 +150,143 @@ const menuDataDe: Record<string, MenuItem[]> = {
       id: 21,
       name: "Mineralwasser",
       price: 2.50,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Mineralwasser, still oder mit Kohlensäure."
+      image: "images/menu/drinks/drinks-001.webp",
+      description: "Natürliches oder sprudelndes Mineralwasser."
     },
     {
       id: 22,
-      name: "Erfrischungsgetränk (Coca-Cola, Fanta, Sprite)",
+      name: "Softdrink (Coca-Cola, Fanta, Sprite)",
       price: 3.00,
-      image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
-      description: "Auswahl an beliebten Erfrischungsgetränken."
+      image: "images/menu/drinks/drinks-002.webp",
+      description: "Verschiedene beliebte Softdrinks."
     },
     {
       id: 23,
-      name: "Frischer Saft (Orange, Ananas, Apfel)",
+      name: "Frisch gepresster Saft (Orange, Ananas, Apfel)",
       price: 3.50,
-      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/drinks/drinks-003.webp",
       description: "Frisch gepresste Fruchtsäfte."
     },
     {
       id: 24,
       name: "Hausgemachte Limonade",
       price: 3.80,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Erfrischende, hausgemachte Naturlimonade."
+      image: "images/menu/drinks/drinks-004.webp",
+      description: "Erfrischende hausgemachte Limonade."
     },
     {
       id: 25,
       name: "Eistee (Zitrone, Pfirsich)",
       price: 3.20,
-      image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-      description: "Eistee zur Erfrischung, in verschiedenen Geschmacksrichtungen."
+      image: "images/menu/drinks/drinks-005.webp",
+      description: "Erfrischender Eistee in verschiedenen Geschmacksrichtungen."
     },
     {
       id: 26,
       name: "Espresso",
       price: 2.00,
-      image: "https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/drinks/drinks-006.webp",
       description: "Italienischer Espresso, intensiv und aromatisch."
     },
     {
       id: 27,
       name: "Cappuccino",
       price: 2.80,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Kaffee mit aufgeschäumter Milch, perfekt für jede Tageszeit."
+      image: "images/menu/drinks/drinks-007.webp",
+      description: "Kaffee mit aufgeschäumter Milch, perfekt für jede Gelegenheit."
     },
     {
       id: 28,
       name: "Latte Macchiato",
       price: 3.00,
-      image: "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/drinks/drinks-008.webp",
       description: "Heiße Milch mit einem Schuss Espresso."
     },
     {
       id: 29,
       name: "Heiße Schokolade",
       price: 3.50,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Köstliche heiße Schokolade, cremig und wohltuend."
+      image: "images/menu/drinks/drinks-009.webp",
+      description: "Leckere heiße Schokolade, cremig und wohltuend."
     },
     {
       id: 30,
       name: "Frucht-Smoothie (Erdbeere, Banane)",
       price: 4.50,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/drinks/drinks-010.webp",
       description: "Erfrischende Smoothies aus frischen Früchten."
     }
   ],
   postres: [
     {
       id: 31,
-      name: "Klassisches Tiramisù",
+      name: "Klassisches Tiramisu",
       price: 6.50,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Traditionelles italienisches Dessert mit Schichten aus Löffelbiskuits, Kaffee, Mascarpone und Kakao."
+      image: "images/menu/desserts/desserts-001.webp",
+      description: "Traditionelles italienisches Dessert mit Löffelbiskuits, Kaffee, Mascarpone und Kakao."
     },
     {
       id: 32,
-      name: "Panna Cotta mit roten Früchten",
+      name: "Panna Cotta mit Beeren",
       price: 6.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Cremiger Sahne-Pudding mit einer Sauce aus frischen roten Früchten."
+      image: "images/menu/desserts/desserts-002.webp",
+      description: "Cremige Panna Cotta mit einer Sauce aus frischen Beeren."
     },
     {
       id: 33,
       name: "Sizilianische Cannoli",
       price: 7.00,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Knusprige frittierte Teigröllchen, gefüllt mit süßer Ricotta und kandierten Früchten."
+      image: "images/menu/desserts/desserts-003.webp",
+      description: "Knusprige Teigröllchen, gefüllt mit süßer Ricotta und kandierten Früchten."
     },
     {
       id: 34,
-      name: "Handwerkliches Gelato",
+      name: "Hausgemachtes Gelato",
       price: 5.00,
-      image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Handwerklich hergestelltes italienisches Eis in verschiedenen Sorten: Vanille, Schokolade, Pistazie."
+      image: "images/menu/desserts/desserts-004.webp",
+      description: "Hausgemachtes italienisches Eis in verschiedenen Sorten: Vanille, Schokolade, Pistazie."
     },
     {
       id: 35,
       name: "Käsekuchen mit Amarena-Kirschen",
       price: 6.80,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
+      image: "images/menu/desserts/desserts-005.webp",
       description: "Cremiger Käsekuchen mit kandierten Amarena-Kirschen."
     },
     {
       id: 36,
-      name: "Profiteroles mit Schokolade",
+      name: "Schokoladen-Profiteroles",
       price: 6.20,
-      image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80",
-      description: "Kleine Windbeutel aus Brandteig, gefüllt mit Sahne und überzogen mit Schokoladensauce."
+      image: "images/menu/desserts/desserts-006.webp",
+      description: "Kleine Brandteigkugeln, gefüllt mit Sahne und mit Schokoladensauce überzogen."
     },
     {
       id: 37,
-      name: "Mousse au Chocolat",
+      name: "Schokoladenmousse",
       price: 5.80,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Weiche und leichte Mousse aus dunkler Schokolade."
+      image: "images/menu/desserts/desserts-007.webp",
+      description: "Zarte und leichte Mousse aus dunkler Schokolade."
     },
     {
       id: 38,
       name: "Frisches Obst der Saison",
       price: 4.50,
-      image: "https://images.unsplash.com/photo-1464306076886-debca5e8a6b0?auto=format&fit=crop&w=400&q=80",
-      description: "Eine Auswahl an frischem saisonalem Obst."
+      image: "images/menu/desserts/desserts-008.webp",
+      description: "Auswahl an frischem saisonalem Obst."
     },
     {
       id: 39,
       name: "Nougat-Semifreddo",
       price: 6.70,
-      image: "https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80",
-      description: "Cremiges Halbgefrorenes mit Nougatstücken."
+      image: "images/menu/desserts/desserts-009.webp",
+      description: "Cremiges halbgefrorenes Dessert mit Nougatstückchen."
     },
     {
       id: 40,
       name: "Affogato al Caffè",
       price: 4.00,
-      image: "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80",
-      description: "Eine Kugel Vanilleeis, ertränkt in einem heißen Espresso-Shot."
+      image: "images/menu/desserts/desserts-010.webp",
+      description: "Eine Kugel Vanilleeis mit einem Schuss heißem Espresso."
     }
   ]
 }
